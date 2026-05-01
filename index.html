@@ -1,31 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emilio Cimino — AI Research Specialist</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-:root {
-  --bg:         #060c17;
-  --surface:    #0b1422;
-  --surface2:   #101d30;
-  --surface3:   #162540;
-  --border:     #1a2d48;
-  --border2:    #223855;
-  --cyan:       #38bdf8;
-  --cyan2:      #7dd3fc;
-  --cyan-dim:   rgba(56, 189, 248, 0.12);
-  --cyan-glow:  rgba(56, 189, 248, 0.25);
-  --gold:       #e4b84a;
-  --gold-dim:   rgba(228, 184, 74, 0.12);
-  --text:       #e0eaf8;
-  --muted:      #6a87aa;
-  --dim:        #334d68;
-  --dot:        rgba(56,189,248,0.07);
+<!-- ═══ SEO ═══ -->
+<title>Emilio Cimino — AI Research Specialist & Data Scientist | Lecce, Italy</title>
+<meta name="description" content="Portfolio of Emilio Cimino — Technical Research Specialist, Data Scientist and AI Researcher with 4+ years building AI frameworks for Digital Twins, Generative AI and Industrial IoT. Based in Lecce, Italy. Open to research collaboration.">
+<meta name="keywords" content="Emilio Cimino, AI Researcher, Data Scientist, Digital Twin, Generative AI, Industrial IoT, FIWARE, LangChain, Python, Machine Learning, Horizon 2020, Lecce Italy, Technical Research Specialist">
+<meta name="author" content="Emilio Cimino">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://emiliocimino.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Emilio Cimino — AI Research Specialist & Data Scientist">
+<meta property="og:description" content="Technical Research Specialist with 4+ years building AI frameworks for Digital Twins, Generative AI, and Industrial IoT. Open to research collaboration.">
+<meta property="og:url" content="https://emiliocimino.dev/">
+<meta property="og:locale" content="en_US">
+<meta property="profile:first_name" content="Emilio">
+<meta property="profile:last_name" content="Cimino">
+<meta property="profile:username" content="emiliocimino">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Emilio Cimino — AI Research Specialist & Data Scientist">
+<meta name="twitter:description" content="Technical Research Specialist · Data Scientist · AI Researcher. Building AI frameworks for Digital Twins and Industrial IoT. Based in Lecce, Italy.">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Emilio Cimino",
+  "jobTitle": "Technical Research Specialist",
+  "description": "AI Researcher and Data Scientist specialising in Digital Twins, Generative AI, and Industrial IoT. 4+ years of R&D experience including four Horizon 2020 projects.",
+  "url": "https://emiliocimino.dev/",
+  "email": "emilio.cimino@outlook.it",
+  "telephone": "+393201887918",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lecce",
+    "addressCountry": "IT"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Università del Salento",
+      "department": "Computer Engineering"
+    }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Engineering Ingegneria Informatica S.p.A."
+  },
+  "sameAs": [
+    "https://linkedin.com/in/emilio-cimino-46a6ab233/",
+    "https://github.com/emiliocimino",
+    "https://www.researchgate.net/profile/Emilio-Cimino-2"
+  ],
+  "knowsAbout": [
+    "Artificial Intelligence","Machine Learning","Deep Learning","Digital Twins",
+    "Generative AI","Industrial IoT","Data Science","FIWARE","LangChain",
+    "Explainable AI","Python","TensorFlow","PyTorch","PySpark","Kubernetes"
+  ]
 }
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════
+   THEME TOKENS — dark (default) and light
+════════════════════════════════════════════════════════ */
+:root,
+[data-theme="dark"] {
+  --bg:           #060c17;
+  --bg2:          #0a1220;
+  --surface:      #0b1422;
+  --surface2:     #101d30;
+  --surface3:     #162540;
+  --border:       #1a2d48;
+  --border2:      #223855;
+  --accent:       #38bdf8;
+  --accent2:      #7dd3fc;
+  --accent-dim:   rgba(56,189,248,0.12);
+  --accent-glow:  rgba(56,189,248,0.25);
+  --gold:         #e4b84a;
+  --gold-dim:     rgba(228,184,74,0.12);
+  --text:         #e0eaf8;
+  --text2:        #b8cfe8;
+  --muted:        #7a9bbf;
+  --dim:          #3d5a7a;
+  --dot:          rgba(56,189,248,0.07);
+  --hero-grad:    linear-gradient(165deg,#0c1e36 0%,#060c17 55%);
+  --lock-bg:      radial-gradient(circle at 38% 32%,#1c3254 0%,#0b1828 55%,#060d1a 100%);
+  --lock-cyl:     radial-gradient(circle at 36% 36%,#243d58 0%,#132030 60%,#0a1520 100%);
+  --overlay-bg:   rgba(6,12,23,0.72);
+  --scrollbar:    #223855;
+  --hero-line:    rgba(56,189,248,0.4);
+  --shadow-card:  0 2px 12px rgba(0,0,0,0.35);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg:           #f0f4fa;
+  --bg2:          #e4ecf7;
+  --surface:      #ffffff;
+  --surface2:     #f5f8fd;
+  --surface3:     #eaf0f9;
+  --border:       #ccdaee;
+  --border2:      #b8cbe0;
+  --accent:       #0284c7;
+  --accent2:      #0369a1;
+  --accent-dim:   rgba(2,132,199,0.10);
+  --accent-glow:  rgba(2,132,199,0.20);
+  --gold:         #b45309;
+  --gold-dim:     rgba(180,83,9,0.08);
+  --text:         #1a2a3a;
+  --text2:        #2d4259;
+  --muted:        #4a6580;
+  --dim:          #8faabf;
+  --dot:          rgba(2,132,199,0.06);
+  --hero-grad:    linear-gradient(165deg,#dbeafe 0%,#f0f4fa 55%);
+  --lock-bg:      radial-gradient(circle at 38% 32%,#bfdbfe 0%,#dbeafe 55%,#eff6ff 100%);
+  --lock-cyl:     radial-gradient(circle at 36% 36%,#93c5fd 0%,#bfdbfe 60%,#dbeafe 100%);
+  --overlay-bg:   rgba(240,244,250,0.82);
+  --scrollbar:    #b8cbe0;
+  --hero-line:    rgba(2,132,199,0.3);
+  --shadow-card:  0 2px 12px rgba(30,60,100,0.10);
+  color-scheme: light;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESET & BASE
+════════════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
 
@@ -33,9 +145,11 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Syne', sans-serif;
+  font-size: 16px;
   display: flex;
   height: 100vh;
   overflow: hidden;
+  transition: background 0.35s, color 0.35s;
 }
 
 body::before {
@@ -46,12 +160,46 @@ body::before {
   background-size: 28px 28px;
   pointer-events: none;
   z-index: 0;
+  transition: background-image 0.35s;
 }
 
-::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 4px; }
 
+/* ═══════════════════════════════════════════════════════
+   THEME TOGGLE BUTTON
+════════════════════════════════════════════════════════ */
+.theme-toggle {
+  position: fixed;
+  top: 1.2rem;
+  right: calc(25% + 1.2rem);
+  z-index: 100;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.25s;
+  box-shadow: var(--shadow-card);
+}
+
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+
+.theme-toggle-icon { font-size: 13px; line-height: 1; }
+
+/* ═══════════════════════════════════════════════════════
+   CV PANEL (75%)
+════════════════════════════════════════════════════════ */
 .cv-panel {
   flex: 0 0 75%;
   height: 100vh;
@@ -60,10 +208,11 @@ body::before {
   z-index: 1;
 }
 
+/* ── Hero ── */
 .hero {
   position: relative;
   padding: 5.5rem 5.5rem 4.5rem;
-  background: linear-gradient(165deg, #0c1e36 0%, #060c17 55%);
+  background: var(--hero-grad);
   overflow: hidden;
 }
 
@@ -72,7 +221,7 @@ body::before {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(to right, transparent 0%, var(--cyan) 40%, transparent 100%);
+  background: linear-gradient(to right, transparent 0%, var(--accent) 40%, transparent 100%);
   opacity: 0.4;
 }
 
@@ -81,7 +230,7 @@ body::before {
   top: -80px; right: -80px;
   width: 420px; height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, rgba(56,189,248,0.07) 0%, transparent 65%);
+  background: radial-gradient(circle at 50% 50%, var(--accent-dim) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -90,7 +239,7 @@ body::before {
   bottom: -60px; left: 300px;
   width: 280px; height: 280px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(228,184,74,0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--gold-dim) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -99,18 +248,18 @@ body::before {
   align-items: center;
   gap: 10px;
   font-family: 'DM Mono', monospace;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: var(--accent);
   margin-bottom: 1.8rem;
 }
 
 .hero-eyebrow-dot {
-  width: 6px; height: 6px;
+  width: 7px; height: 7px;
   border-radius: 50%;
-  background: var(--cyan);
-  box-shadow: 0 0 10px var(--cyan);
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
   animation: blink 2.5s ease-in-out infinite;
 }
 
@@ -129,12 +278,12 @@ body::before {
   color: var(--text);
 }
 
-.hero-name .accent { color: var(--cyan); }
+.hero-name .accent { color: var(--accent); }
 
 .hero-role {
   font-family: 'DM Mono', monospace;
-  font-size: 11px;
-  font-weight: 300;
+  font-size: 12px;
+  font-weight: 400;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: var(--muted);
@@ -143,13 +292,13 @@ body::before {
 
 .hero-tagline {
   font-family: 'Crimson Pro', serif;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 300;
   font-style: italic;
   color: var(--muted);
-  max-width: 620px;
+  max-width: 640px;
   line-height: 1.9;
-  border-left: 2px solid rgba(56,189,248,0.3);
+  border-left: 2px solid var(--hero-line);
   padding-left: 1.4rem;
   margin-bottom: 3rem;
 }
@@ -157,7 +306,7 @@ body::before {
 .hero-contacts {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .contact-chip {
@@ -165,25 +314,27 @@ body::before {
   align-items: center;
   gap: 8px;
   font-family: 'DM Mono', monospace;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 300;
   color: var(--muted);
   text-decoration: none;
   background: var(--surface2);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 6px 12px;
+  padding: 7px 14px;
   transition: all 0.2s;
+  box-shadow: var(--shadow-card);
 }
 
 .contact-chip:hover {
-  border-color: var(--cyan);
-  color: var(--cyan2);
-  background: var(--cyan-dim);
+  border-color: var(--accent);
+  color: var(--accent2);
+  background: var(--accent-dim);
 }
 
-.contact-chip svg { width: 13px; height: 13px; flex-shrink: 0; }
+.contact-chip svg { width: 14px; height: 14px; flex-shrink: 0; }
 
+/* ── Generic section ── */
 .section {
   padding: 4rem 5.5rem;
   border-bottom: 1px solid var(--border);
@@ -196,24 +347,24 @@ body::before {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.8rem;
 }
 
 .sec-num {
   font-family: 'DM Mono', monospace;
-  font-size: 10px;
-  color: var(--cyan);
+  font-size: 11px;
+  color: var(--accent);
   opacity: 0.5;
-  min-width: 24px;
+  min-width: 28px;
 }
 
 .sec-label {
   font-family: 'DM Mono', monospace;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: var(--accent);
 }
 
 .sec-line {
@@ -222,6 +373,7 @@ body::before {
   background: linear-gradient(to right, var(--border2), transparent);
 }
 
+/* ── Timeline ── */
 .timeline { position: relative; display: flex; flex-direction: column; gap: 0; }
 
 .timeline::before {
@@ -230,7 +382,7 @@ body::before {
   left: 0; top: 12px;
   width: 1px;
   height: calc(100% - 30px);
-  background: linear-gradient(to bottom, var(--cyan) 0%, transparent 100%);
+  background: linear-gradient(to bottom, var(--accent) 0%, transparent 100%);
   opacity: 0.3;
 }
 
@@ -238,7 +390,7 @@ body::before {
   display: grid;
   grid-template-columns: 16px 1fr;
   gap: 0 1.8rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2.8rem;
   position: relative;
 }
 
@@ -252,12 +404,16 @@ body::before {
 }
 
 .job-dot {
-  width: 8px; height: 8px;
+  width: 9px; height: 9px;
   border-radius: 50%;
-  background: var(--cyan);
-  box-shadow: 0 0 12px var(--cyan-glow);
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent-glow);
   flex-shrink: 0;
   border: 1px solid rgba(56,189,248,0.5);
+}
+
+[data-theme="light"] .job-dot {
+  border-color: rgba(2,132,199,0.4);
 }
 
 .job-meta {
@@ -265,13 +421,13 @@ body::before {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   flex-wrap: wrap;
 }
 
 .job-title {
   font-family: 'Syne', sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   color: var(--text);
   letter-spacing: -0.3px;
@@ -279,34 +435,38 @@ body::before {
 
 .job-date {
   font-family: 'DM Mono', monospace;
-  font-size: 10px;
-  color: var(--cyan);
-  background: var(--cyan-dim);
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-dim);
   border: 1px solid rgba(56,189,248,0.2);
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: 20px;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
+[data-theme="light"] .job-date {
+  border-color: rgba(2,132,199,0.2);
+}
+
 .job-company {
   font-family: 'DM Mono', monospace;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 300;
   color: var(--muted);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   letter-spacing: 0.3px;
 }
 
-.job-bullets { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.job-bullets { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 
 .job-bullets li {
   font-family: 'Crimson Pro', serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   color: var(--muted);
-  line-height: 1.65;
-  padding-left: 16px;
+  line-height: 1.7;
+  padding-left: 18px;
   position: relative;
 }
 
@@ -314,36 +474,37 @@ body::before {
   content: '›';
   position: absolute;
   left: 0;
-  color: var(--cyan);
-  font-size: 18px;
-  line-height: 1.35;
+  color: var(--accent);
+  font-size: 20px;
+  line-height: 1.3;
 }
 
 .pill-gold {
   display: inline-block;
   font-family: 'DM Mono', monospace;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 400;
   color: var(--gold);
   border: 1px solid rgba(228,184,74,0.3);
   background: var(--gold-dim);
   border-radius: 20px;
-  padding: 1px 8px;
+  padding: 2px 9px;
   letter-spacing: 0.3px;
   vertical-align: middle;
   margin-left: 6px;
 }
 
-.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2rem 3rem; }
+/* ── Skills ── */
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.4rem 3rem; }
 
 .skill-group-name {
   font-family: 'DM Mono', monospace;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -351,21 +512,26 @@ body::before {
 
 .skill-group-name::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
 .tag {
   font-family: 'DM Mono', monospace;
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 300;
-  background: var(--cyan-dim);
+  background: var(--accent-dim);
   border: 1px solid rgba(56,189,248,0.18);
   border-radius: 4px;
-  padding: 3px 10px;
-  color: var(--cyan2);
+  padding: 4px 11px;
+  color: var(--accent2);
   transition: all 0.2s;
 }
 
-.tag:hover { background: rgba(56,189,248,0.2); border-color: rgba(56,189,248,0.4); }
+[data-theme="light"] .tag {
+  color: var(--accent);
+  border-color: rgba(2,132,199,0.2);
+}
+
+.tag:hover { background: var(--accent-glow); border-color: var(--accent); }
 
 .tag-gold {
   background: var(--gold-dim);
@@ -373,77 +539,177 @@ body::before {
   color: var(--gold);
 }
 
-.edu-list { display: flex; flex-direction: column; gap: 2rem; }
+[data-theme="light"] .tag-gold { border-color: rgba(180,83,9,0.2); }
+
+/* ── Education ── */
+.edu-list { display: flex; flex-direction: column; gap: 2.2rem; }
 
 .edu-item {
   display: grid;
   grid-template-columns: 3px 1fr;
-  gap: 0 1.5rem;
+  gap: 0 1.6rem;
 }
 
 .edu-bar {
-  background: linear-gradient(to bottom, var(--cyan), transparent);
+  background: linear-gradient(to bottom, var(--accent), transparent);
   border-radius: 3px;
   min-height: 70px;
 }
 
 .edu-degree {
   font-family: 'Syne', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: var(--text);
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .edu-school {
   font-family: 'DM Mono', monospace;
-  font-size: 10.5px;
+  font-size: 11.5px;
   font-weight: 300;
-  color: var(--cyan2);
-  opacity: 0.7;
-  margin-bottom: 6px;
+  color: var(--accent2);
+  opacity: 0.8;
+  margin-bottom: 7px;
   letter-spacing: 0.2px;
 }
 
+[data-theme="light"] .edu-school { color: var(--accent); }
+
 .edu-detail {
   font-family: 'Crimson Pro', serif;
-  font-size: 14.5px;
+  font-size: 16px;
   font-weight: 300;
   color: var(--muted);
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
+/* ── Languages ── */
 .lang-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 
 .lang-card {
   background: var(--surface2);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 1.3rem 1.5rem;
+  padding: 1.4rem 1.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow-card);
 }
 
-.lang-card:hover { border-color: var(--border2); }
+.lang-card:hover { border-color: var(--border2); box-shadow: 0 4px 18px rgba(0,0,0,0.12); }
 
-.lang-name { font-size: 14px; font-weight: 600; color: var(--text); }
+.lang-name { font-size: 15px; font-weight: 600; color: var(--text); }
 .lang-level {
   font-family: 'DM Mono', monospace;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 400;
-  color: var(--cyan);
-  background: var(--cyan-dim);
+  color: var(--accent);
+  background: var(--accent-dim);
   border: 1px solid rgba(56,189,248,0.2);
-  padding: 3px 11px;
+  padding: 4px 12px;
   border-radius: 20px;
   letter-spacing: 1px;
 }
 
+[data-theme="light"] .lang-level { border-color: rgba(2,132,199,0.2); }
+
+/* ── Extended Profile Sections ── */
 .soft-wrap { margin-top: 2rem; }
 
-/* ══════ CHAT PANEL ══════ */
+.profile-section {
+  padding: 4rem 5.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-section:last-child { border-bottom: none; padding-bottom: 5rem; }
+
+.profile-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
+  margin-top: 0.5rem;
+}
+
+.profile-item {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  transition: border-color 0.2s;
+  box-shadow: var(--shadow-card);
+}
+
+.profile-item:hover { border-color: var(--border2); }
+
+.profile-item-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.profile-item-body {
+  font-family: 'Crimson Pro', serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.profile-prose {
+  font-family: 'Crimson Pro', serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.85;
+  max-width: 72ch;
+}
+
+.profile-prose + .profile-prose { margin-top: 1.2rem; }
+
+.profile-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 1.8rem 0 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-sub::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+.strength-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 0.6rem; }
+
+.strength-list li {
+  font-family: 'Crimson Pro', serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.65;
+  padding-left: 18px;
+  position: relative;
+}
+
+.strength-list li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+/* ══════════════════════════════════════════════════════
+   CHAT PANEL (25%)
+══════════════════════════════════════════════════════ */
 .chat-panel {
   flex: 0 0 25%;
   height: 100vh;
@@ -454,6 +720,7 @@ body::before {
   border-left: 1px solid var(--border);
   position: relative;
   z-index: 2;
+  transition: background 0.35s, border-color 0.35s;
 }
 
 .chat-panel::before {
@@ -461,7 +728,7 @@ body::before {
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 200px;
-  background: linear-gradient(to bottom, rgba(56,189,248,0.03), transparent);
+  background: linear-gradient(to bottom, var(--accent-dim), transparent);
   pointer-events: none;
   z-index: 0;
 }
@@ -479,7 +746,7 @@ body::before {
   font-size: 9px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--cyan);
+  color: var(--accent);
   margin-bottom: 5px;
 }
 
@@ -499,7 +766,7 @@ body::before {
   margin-top: 3px;
 }
 
-/* LOCK */
+/* ── Lock ── */
 .lock-section {
   padding: 1.8rem 1.6rem;
   display: flex;
@@ -510,7 +777,6 @@ body::before {
   flex-shrink: 0;
   position: relative;
   z-index: 1;
-  background: linear-gradient(to bottom, rgba(10,20,36,0.4), transparent);
 }
 
 .lock-instruction {
@@ -523,7 +789,7 @@ body::before {
   transition: color 0.5s;
 }
 
-.lock-instruction.on { color: var(--cyan); }
+.lock-instruction.on { color: var(--accent); }
 
 .ignition {
   position: relative;
@@ -544,14 +810,14 @@ body::before {
 
 .ignition::before { content: 'off'; right: calc(100% + 14px); color: var(--dim); }
 .ignition::after  { content: 'on';  left: calc(100% + 14px);  color: var(--dim); transition: color 0.4s; }
-.ignition.on::after { color: var(--cyan); text-shadow: 0 0 8px var(--cyan); }
+.ignition.on::after { color: var(--accent); text-shadow: 0 0 8px var(--accent); }
 
 .lock-housing {
   width: 86px; height: 86px;
   border-radius: 50%;
-  background: radial-gradient(circle at 38% 32%, #1c3254 0%, #0b1828 55%, #060d1a 100%);
-  box-shadow: 0 0 0 2px #1a2d48, 0 0 0 5px #0c1829, 0 8px 28px rgba(0,0,0,0.55),
-    inset 0 2px 5px rgba(255,255,255,0.05), inset 0 -3px 6px rgba(0,0,0,0.5);
+  background: var(--lock-bg);
+  box-shadow: 0 0 0 2px var(--border), 0 0 0 5px var(--bg2), 0 8px 28px rgba(0,0,0,0.25),
+    inset 0 2px 5px rgba(255,255,255,0.07), inset 0 -3px 6px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -570,32 +836,32 @@ body::before {
   transition: background 0.5s, box-shadow 0.5s;
 }
 
-.lock-housing.on::after { background: var(--cyan); box-shadow: 0 0 8px var(--cyan), 0 0 16px rgba(56,189,248,0.4); }
+.lock-housing.on::after { background: var(--accent); box-shadow: 0 0 8px var(--accent), 0 0 16px var(--accent-glow); }
 
 .lock-housing.on {
-  box-shadow: 0 0 0 2px #1a2d48, 0 0 0 5px #0c1829, 0 8px 28px rgba(0,0,0,0.55),
-    inset 0 2px 5px rgba(255,255,255,0.05), inset 0 -3px 6px rgba(0,0,0,0.5),
-    0 0 40px rgba(56,189,248,0.2), 0 0 0 8px rgba(56,189,248,0.07);
+  box-shadow: 0 0 0 2px var(--border), 0 0 0 5px var(--bg2), 0 8px 28px rgba(0,0,0,0.25),
+    inset 0 2px 5px rgba(255,255,255,0.07), inset 0 -3px 6px rgba(0,0,0,0.2),
+    0 0 40px var(--accent-glow), 0 0 0 8px var(--accent-dim);
 }
 
 .lock-cylinder {
   width: 60px; height: 60px;
   border-radius: 50%;
-  background: radial-gradient(circle at 36% 36%, #243d58 0%, #132030 60%, #0a1520 100%);
-  box-shadow: inset 0 3px 8px rgba(0,0,0,0.5), inset 0 -2px 5px rgba(255,255,255,0.03), 0 2px 5px rgba(0,0,0,0.4);
+  background: var(--lock-cyl);
+  box-shadow: inset 0 3px 8px rgba(0,0,0,0.3), inset 0 -2px 5px rgba(255,255,255,0.05), 0 2px 5px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.75s cubic-bezier(0.34, 1.15, 0.64, 1);
+  transition: transform 0.75s cubic-bezier(0.34,1.15,0.64,1);
   position: relative;
-  border: 1px solid rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
 }
 
 .lock-cylinder.on { transform: rotate(90deg); }
 
 .key-slot { display: flex; flex-direction: column; align-items: center; gap: 1px; }
 .slot-shaft { width: 5px; height: 16px; background: var(--bg); border-radius: 3px 3px 1px 1px; }
-.slot-bow { width: 13px; height: 8px; background: var(--bg); border-radius: 2px 2px 3px 3px; clip-path: polygon(8% 0%, 92% 0%, 100% 100%, 0% 100%); }
+.slot-bow { width: 13px; height: 8px; background: var(--bg); border-radius: 2px 2px 3px 3px; clip-path: polygon(8% 0%,92% 0%,100% 100%,0% 100%); }
 
 .lock-status-row {
   display: flex;
@@ -616,10 +882,10 @@ body::before {
   transition: background 0.5s, box-shadow 0.5s;
 }
 
-.lock-status-row.on { color: var(--cyan2); }
-.lock-status-row.on .status-dot { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); animation: blink 2s ease-in-out infinite; }
+.lock-status-row.on { color: var(--accent2); }
+.lock-status-row.on .status-dot { background: var(--accent); box-shadow: 0 0 8px var(--accent); animation: blink 2s ease-in-out infinite; }
 
-/* CHAT BODY */
+/* ── Chat body ── */
 .chat-body {
   flex: 1;
   display: flex;
@@ -641,9 +907,9 @@ body::before {
   padding: 10px 13px;
   border-radius: 10px;
   font-family: 'DM Mono', monospace;
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.65;
   animation: msgIn 0.25s ease both;
 }
 
@@ -653,19 +919,19 @@ body::before {
 }
 
 .msg-system {
-  background: rgba(56,189,248,0.05);
+  background: var(--accent-dim);
   border: 1px solid rgba(56,189,248,0.12);
   color: var(--muted);
   text-align: center;
   align-self: center;
   max-width: 95%;
   border-radius: 8px;
-  font-size: 10.5px;
+  font-size: 11px;
   letter-spacing: 0.3px;
 }
 
 .msg-user {
-  background: rgba(56,189,248,0.1);
+  background: var(--accent-dim);
   border: 1px solid rgba(56,189,248,0.2);
   color: var(--text);
   align-self: flex-end;
@@ -716,7 +982,7 @@ body::before {
 .locked-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(6, 12, 23, 0.72);
+  background: var(--overlay-bg);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   display: flex;
@@ -757,7 +1023,7 @@ body::before {
   border-radius: 8px;
   padding: 9px 12px;
   font-family: 'DM Mono', monospace;
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 300;
   color: var(--text);
   outline: none;
@@ -769,13 +1035,13 @@ body::before {
 }
 
 .chat-input::placeholder { color: var(--dim); }
-.chat-input:focus { border-color: rgba(56,189,248,0.4); }
+.chat-input:focus { border-color: var(--accent); }
 .chat-input:disabled { opacity: 0.3; cursor: not-allowed; }
 
 .chat-send {
-  width: 34px; height: 34px;
+  width: 36px; height: 36px;
   border-radius: 7px;
-  background: var(--cyan);
+  background: var(--accent);
   border: none;
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
@@ -787,7 +1053,7 @@ body::before {
   padding: 0;
 }
 
-.chat-send:hover:not(:disabled) { background: var(--cyan2); transform: scale(1.05); }
+.chat-send:hover:not(:disabled) { background: var(--accent2); transform: scale(1.05); }
 .chat-send:disabled { opacity: 0.25; cursor: not-allowed; }
 
 .msg-error {
@@ -798,82 +1064,97 @@ body::before {
   max-width: 95%;
   border-radius: 8px;
   text-align: center;
-  font-size: 10.5px;
+  font-size: 11px;
 }
 </style>
 </head>
+
 <body>
 
-<main class="cv-panel" id="cv-content">
+<!-- Theme Toggle -->
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
+  <span class="theme-toggle-icon" id="theme-icon">☀️</span>
+  <span id="theme-label">Light</span>
+</button>
 
-  <section class="hero">
-    <div class="hero-orb"></div>
-    <div class="hero-orb2"></div>
+<!-- ═══════════════════════════════════════════════════════
+     CV PANEL
+════════════════════════════════════════════════════════ -->
+<main class="cv-panel" id="cv-content" role="main" aria-label="Emilio Cimino CV">
+
+  <!-- ── Hero ── -->
+  <header class="hero">
+    <div class="hero-orb" aria-hidden="true"></div>
+    <div class="hero-orb2" aria-hidden="true"></div>
     <div class="hero-eyebrow">
-      <span class="hero-eyebrow-dot"></span>
+      <span class="hero-eyebrow-dot" aria-hidden="true"></span>
       Available for Research Collaboration
     </div>
     <h1 class="hero-name">Emilio<br><span class="accent">Cimino</span></h1>
-    <p class="hero-role">Technical Research Specialist &nbsp;·&nbsp; Data Scientist &nbsp;·&nbsp; AI Researcher</p>
+    <p class="hero-role" aria-label="Professional roles">Technical Research Specialist &nbsp;·&nbsp; Data Scientist &nbsp;·&nbsp; AI Researcher</p>
     <p class="hero-tagline">
-      Research Specialist with 4 years of experience building AI frameworks for Digital Twins, Data Spaces, and Generative AI within industrial and manufacturing environments. Led Horizon 2020 projects, developed cataloged open-source assets, and certified to train educators in the ethical application of AI.
+      Research Specialist with 4+ years of experience building AI frameworks for Digital Twins, Data Spaces, and Generative AI within industrial and manufacturing environments. Led Horizon 2020 projects, developed cataloged open-source assets, and certified to train educators in the ethical application of AI.
     </p>
-    <div class="hero-contacts">
-      <a class="contact-chip" href="mailto:emilio.cimino@outlook.it">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+    <nav class="hero-contacts" aria-label="Contact links">
+      <a class="contact-chip" href="mailto:emilio.cimino@outlook.it" aria-label="Email Emilio Cimino">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
         emilio.cimino@outlook.it
       </a>
       <span class="contact-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         Lecce, Italy
       </span>
       <span class="contact-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
         (+39) 320 188 7918
       </span>
-      <a class="contact-chip" href="https://linkedin.com/in/emilio-cimino-46a6ab233/" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      <a class="contact-chip" href="https://linkedin.com/in/emilio-cimino-46a6ab233/" target="_blank" rel="noopener noreferrer" aria-label="Emilio Cimino on LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         LinkedIn
       </a>
-      <a class="contact-chip" href="https://github.com/emiliocimino" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      <a class="contact-chip" href="https://github.com/emiliocimino" target="_blank" rel="noopener noreferrer" aria-label="Emilio Cimino on GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
         GitHub
       </a>
-      <a class="contact-chip" href="https://www.researchgate.net/profile/Emilio-Cimino-2" target="_blank">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0H4.414A4.414 4.414 0 000 4.414v15.172A4.414 4.414 0 004.414 24h15.172A4.414 4.414 0 0024 19.586V4.414A4.414 4.414 0 0019.586 0zM13.8 18.43h-1.86v-6.13H9.18v6.13H7.32V9.43h6.48v9zm3.72 0h-1.86V9.43h1.86v9z"/></svg>
+      <a class="contact-chip" href="https://www.researchgate.net/profile/Emilio-Cimino-2" target="_blank" rel="noopener noreferrer" aria-label="Emilio Cimino on ResearchGate">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.586 0H4.414A4.414 4.414 0 000 4.414v15.172A4.414 4.414 0 004.414 24h15.172A4.414 4.414 0 0024 19.586V4.414A4.414 4.414 0 0019.586 0zM13.8 18.43h-1.86v-6.13H9.18v6.13H7.32V9.43h6.48v9zm3.72 0h-1.86V9.43h1.86v9z"/></svg>
         ResearchGate
       </a>
-    </div>
-  </section>
+    </nav>
+  </header>
 
-  <section class="section">
+  <!-- ══════════════════════════════════════
+       SECTION 01 — EXPERIENCE
+  ══════════════════════════════════════ -->
+  <section class="section" aria-labelledby="s-experience">
     <div class="sec-eyebrow">
       <span class="sec-num">01</span>
-      <span class="sec-label">Experience</span>
-      <span class="sec-line"></span>
+      <span class="sec-label" id="s-experience">Experience</span>
+      <span class="sec-line" aria-hidden="true"></span>
     </div>
     <div class="timeline">
-      <div class="job">
-        <div class="job-node"><div class="job-dot"></div></div>
+      <article class="job">
+        <div class="job-node" aria-hidden="true"><div class="job-dot"></div></div>
         <div>
           <div class="job-meta">
-            <span class="job-title">Technical Research Specialist</span>
-            <span class="job-date">Sep 2025 – Present</span>
+            <h2 class="job-title">Technical Research Specialist</h2>
+            <time class="job-date" datetime="2025-09">Sep 2025 – Present</time>
           </div>
           <div class="job-company">Engineering Ingegneria Informatica S.p.A.</div>
           <ul class="job-bullets">
-            <li>R&D activities within the AI &amp; Data unit, focusing on scientific research and asset development.</li>
+            <li>R&amp;D activities within the AI &amp; Data unit, focusing on scientific research and asset development.</li>
             <li>Researcher and Data Scientist for Digital Twin management frameworks; creating AI agents for autonomous system support.</li>
             <li>Developed GENESIS — a generative system for producing realistic synthetic industrial datasets at scale.</li>
           </ul>
         </div>
-      </div>
-      <div class="job">
-        <div class="job-node"><div class="job-dot"></div></div>
+      </article>
+
+      <article class="job">
+        <div class="job-node" aria-hidden="true"><div class="job-dot"></div></div>
         <div>
           <div class="job-meta">
-            <span class="job-title">R&amp;D Consultant</span>
-            <span class="job-date">Mar 2022 – Sep 2025</span>
+            <h2 class="job-title">R&amp;D Consultant</h2>
+            <time class="job-date" datetime="2022-03">Mar 2022 – Sep 2025</time>
           </div>
           <div class="job-company">Eka S.r.l. · Consultant for Engineering Ingegneria Informatica S.p.A.</div>
           <ul class="job-bullets">
@@ -882,13 +1163,14 @@ body::before {
             <li>Designed the Autonomic Manager asset for intelligent industrial process optimisation.</li>
           </ul>
         </div>
-      </div>
-      <div class="job">
-        <div class="job-node"><div class="job-dot"></div></div>
+      </article>
+
+      <article class="job">
+        <div class="job-node" aria-hidden="true"><div class="job-dot"></div></div>
         <div>
           <div class="job-meta">
-            <span class="job-title">AI Trainer &amp; Consultant</span>
-            <span class="job-date">Mar 2025 – Present</span>
+            <h2 class="job-title">AI Trainer &amp; Consultant</h2>
+            <time class="job-date" datetime="2025-03">Mar 2025 – Present</time>
           </div>
           <div class="job-company">Self-Employed / Institutional Collaborations</div>
           <ul class="job-bullets">
@@ -896,15 +1178,18 @@ body::before {
             <li>Conduct workshops on responsible and ethical AI use across public and private schools.</li>
           </ul>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
-  <section class="section">
+  <!-- ══════════════════════════════════════
+       SECTION 02 — TECHNICAL SKILLS
+  ══════════════════════════════════════ -->
+  <section class="section" aria-labelledby="s-skills">
     <div class="sec-eyebrow">
       <span class="sec-num">02</span>
-      <span class="sec-label">Technical Skills</span>
-      <span class="sec-line"></span>
+      <span class="sec-label" id="s-skills">Technical Skills</span>
+      <span class="sec-line" aria-hidden="true"></span>
     </div>
     <div class="skills-grid">
       <div>
@@ -951,10 +1236,9 @@ body::before {
       </div>
     </div>
     <div class="soft-wrap">
-      <div class="skill-group-name" style="margin-bottom:10px;">Soft Skills &amp; Certifications</div>
+      <div class="skill-group-name" style="margin-bottom:12px;">Soft Skills &amp; Certifications</div>
       <div class="tags">
-        <span class="tag tag-gold">ISO 42001</span>
-        <span class="tag tag-gold">Risk Management</span>
+        <span class="tag tag-gold">AI Risk Management</span>
         <span class="tag tag-gold">Problem Solving</span>
         <span class="tag tag-gold">Public Speaking</span>
         <span class="tag tag-gold">Storytelling</span>
@@ -964,56 +1248,157 @@ body::before {
     </div>
   </section>
 
-  <section class="section">
+  <!-- ══════════════════════════════════════
+       SECTION 03 — EDUCATION
+  ══════════════════════════════════════ -->
+  <section class="section" aria-labelledby="s-education">
     <div class="sec-eyebrow">
       <span class="sec-num">03</span>
-      <span class="sec-label">Education &amp; Certifications</span>
-      <span class="sec-line"></span>
+      <span class="sec-label" id="s-education">Education &amp; Certifications</span>
+      <span class="sec-line" aria-hidden="true"></span>
     </div>
     <div class="edu-list">
       <div class="edu-item">
-        <div class="edu-bar" style="background: linear-gradient(to bottom, var(--gold), transparent);"></div>
+        <div class="edu-bar" style="background:linear-gradient(to bottom,var(--gold),transparent);" aria-hidden="true"></div>
         <div>
           <div class="edu-degree">FAIES™ — Ethical AI Trainer for Schools</div>
           <div class="edu-school">Scuola Etica Digitale · Jan 2026 – Mar 2026</div>
-          <div class="edu-detail">Certified in Risk Management and the ethical application of AI within educational frameworks.</div>
+          <p class="edu-detail">Certified in Risk Management and the ethical application of AI within educational frameworks. Enables Emilio to design and deliver accredited training for educators in public and private schools across Italy.</p>
         </div>
       </div>
       <div class="edu-item">
-        <div class="edu-bar"></div>
+        <div class="edu-bar" aria-hidden="true"></div>
         <div>
-          <div class="edu-degree">MSc Computer Engineering <em style="font-weight:300;font-size:13px;font-family:'Crimson Pro',serif;">(English Curriculum)</em></div>
+          <div class="edu-degree">MSc Computer Engineering <em style="font-weight:300;font-size:14px;font-family:'Crimson Pro',serif;">(English Curriculum)</em></div>
           <div class="edu-school">Università del Salento · Sep 2018 – Feb 2022 · EQF Level 7</div>
-          <div class="edu-detail">Specialised in Deep Learning, Advanced Control, and Big Data. Thesis: Deep Neural Networks and satellite imagery for Tropical Cyclone track forecasting.</div>
+          <p class="edu-detail">Specialised in Deep Learning, Advanced Control, and Big Data. Thesis: Deep Neural Networks and satellite imagery for Tropical Cyclone track forecasting — a problem with genuine humanitarian stakes.</p>
         </div>
       </div>
       <div class="edu-item">
-        <div class="edu-bar"></div>
+        <div class="edu-bar" aria-hidden="true"></div>
         <div>
           <div class="edu-degree">BSc Information Engineering</div>
           <div class="edu-school">Università del Salento · Sep 2014 – Mar 2018</div>
-          <div class="edu-detail">Multidisciplinary curriculum across Computer Science, Electronics, and Telecommunications. Thesis: Vulnerability Assessment tools for IT systems.</div>
+          <p class="edu-detail">Multidisciplinary curriculum across Computer Science, Electronics, and Telecommunications. Thesis: Vulnerability Assessment tools for IT systems.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <!-- ══════════════════════════════════════
+       SECTION 04 — LANGUAGES
+  ══════════════════════════════════════ -->
+  <section class="section" aria-labelledby="s-languages">
     <div class="sec-eyebrow">
       <span class="sec-num">04</span>
-      <span class="sec-label">Languages</span>
-      <span class="sec-line"></span>
+      <span class="sec-label" id="s-languages">Languages</span>
+      <span class="sec-line" aria-hidden="true"></span>
     </div>
     <div class="lang-grid">
       <div class="lang-card"><span class="lang-name">Italian</span><span class="lang-level">Native</span></div>
       <div class="lang-card"><span class="lang-name">English</span><span class="lang-level">C1 — B2</span></div>
     </div>
+    <!-- English detail from profile -->
+    <p class="profile-prose" style="margin-top:1.6rem;">
+      English is the language of Emilio's professional life. His Master's degree was delivered in an entirely English-language curriculum, and he has participated in multi-national EU research consortia where English was the working language. He reads scientific literature and API documentation fluently, produces clear technical specifications and reports, and is comfortable in international conferences and remote meetings.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 05 — WHO IS EMILIO (from docx)
+  ══════════════════════════════════════ -->
+  <section class="profile-section" aria-labelledby="s-about" id="extended-profile">
+    <div class="sec-eyebrow">
+      <span class="sec-num">05</span>
+      <span class="sec-label" id="s-about">About Emilio</span>
+      <span class="sec-line" aria-hidden="true"></span>
+    </div>
+    <p class="profile-prose">
+      Emilio Cimino is a Technical Research Specialist and Data Scientist based in Lecce, in the south of Italy. With over four years of hands-on experience at the intersection of Artificial Intelligence, Industrial IoT, and applied research, Emilio has built a career around one consistent drive: turning complex scientific ideas into working systems that create real-world value.
+    </p>
+    <p class="profile-prose">
+      He currently operates within the AI &amp; Data unit of Engineering Ingegneria Informatica S.p.A., one of Italy's largest technology companies, where he contributes to cutting-edge research in Digital Twin management, autonomous AI agent development, and synthetic data generation. His trajectory reflects a profile that is equally at home reading academic papers and deploying production-grade infrastructure.
+    </p>
+    <p class="profile-prose">
+      What defines Emilio professionally is his identity as a <strong>builder</strong>. He doesn't just design systems — he builds them from scratch, seeing a project through from early-stage research and architecture to a functional, deployable product. This instinct was perhaps most clearly expressed in GENESIS, the project he considers the peak of his career so far: a generative AI system capable of producing realistic synthetic industrial datasets. The challenge wasn't only technical — it required rethinking what "realistic" means in a manufacturing context, then engineering a pipeline that could deliver it consistently.
+    </p>
+    <p class="profile-prose">
+      Beyond his primary research work, Emilio has developed a parallel track as an AI Trainer and Consultant. Since early 2025 he has designed and delivered professional training programs for educators in both public and private schools, certified under the FAIES™ framework. This dimension of his work reflects an awareness that technology doesn't operate in a vacuum — it shapes people's lives, and those who build it have a responsibility to the humans who will use it.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 06 — WORKING STYLE (from docx)
+  ══════════════════════════════════════ -->
+  <section class="profile-section" aria-labelledby="s-workstyle">
+    <div class="sec-eyebrow">
+      <span class="sec-num">06</span>
+      <span class="sec-label" id="s-workstyle">Working Style</span>
+      <span class="sec-line" aria-hidden="true"></span>
+    </div>
+    <div class="profile-block">
+      <div class="profile-item">
+        <div class="profile-item-title">Builder's Mindset</div>
+        <p class="profile-item-body">Energised by blank-canvas problems — situations where a system needs to be conceived, designed, and built rather than maintained or improved. Particularly valuable in research and innovation contexts where the path forward is not yet defined.</p>
+      </div>
+      <div class="profile-item">
+        <div class="profile-item-title">Calm Under Pressure</div>
+        <p class="profile-item-body">When deadlines tighten or priorities shift — as they inevitably do in research projects with multiple stakeholders — responds with adaptability rather than rigidity. This quality proved essential during four simultaneous Horizon 2020 projects.</p>
+      </div>
+      <div class="profile-item">
+        <div class="profile-item-title">Collaborative Independence</div>
+        <p class="profile-item-body">Works best in environments that combine independent deep work with team brainstorming. Values the space to develop ideas thoroughly, but equally thrives in collaborative sessions where different perspectives challenge and sharpen thinking.</p>
+      </div>
+      <div class="profile-item">
+        <div class="profile-item-title">Public Speaking &amp; Training</div>
+        <p class="profile-item-body">Comfortable and effective as a communicator in front of an audience — including non-technical educators who are often sceptical. The ability to make complex technical ideas accessible without dumbing them down is a rare skill in the AI space.</p>
+      </div>
+      <div class="profile-item">
+        <div class="profile-item-title">Ethical Awareness</div>
+        <p class="profile-item-body">Certified under FAIES™, taking AI ethics and risk management seriously as a professional discipline. Trained in risk assessment frameworks for AI systems and applied these in both educational and industrial contexts.</p>
+      </div>
+      <div class="profile-item">
+        <div class="profile-item-title">Active Listening &amp; Storytelling</div>
+        <p class="profile-item-body">Listens carefully before speaking. In workshop and consulting contexts, this allows understanding of client needs that are sometimes poorly articulated, before translating them into technical requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 07 — PERSONAL (from docx)
+  ══════════════════════════════════════ -->
+  <section class="profile-section" aria-labelledby="s-personal">
+    <div class="sec-eyebrow">
+      <span class="sec-num">07</span>
+      <span class="sec-label" id="s-personal">Beyond Work</span>
+      <span class="sec-line" aria-hidden="true"></span>
+    </div>
+    <p class="profile-prose">
+      The way a person spends their time outside work often reveals as much about their character as their professional record. Emilio's off-hours portrait is consistent with the qualities that define him professionally: curiosity, patience, craftsmanship, and a preference for tangible, real-world results.
+    </p>
+    <div class="profile-block" style="margin-top:1.8rem;">
+      <div class="profile-item">
+        <div class="profile-item-title">Gaming &amp; Tech Side Projects</div>
+        <p class="profile-item-body">An active gamer whose hobby requires strategic thinking, spatial reasoning, and rapid adaptation. Beyond gaming, he pursues technical side projects that extend his professional skills into personal creative territory — a strong indicator of intrinsic motivation.</p>
+      </div>
+      <div class="profile-item">
+        <div class="profile-item-title">Cooking</div>
+        <p class="profile-item-body">Particularly in Southern Italian culture, cooking is more than food preparation — it is a form of creative expression and a social ritual. It maps to the same cognitive qualities as engineering: precision in execution, experimentation with variables, and satisfaction from a finished product.</p>
+      </div>
+      <div class="profile-item" style="grid-column:1/-1;">
+        <div class="profile-item-title">Fishing</div>
+        <p class="profile-item-body">Especially in the context of the Salento coastline, fishing is a practice of patience, observation, and presence. It functions as a form of active rest — demanding attention but not computation. It also speaks to a person comfortable with uncertainty and delayed rewards — qualities directly transferable to long-term research work.</p>
+      </div>
+    </div>
   </section>
 
 </main>
 
-<!-- CHAT PANEL -->
-<aside class="chat-panel">
+<!-- ═══════════════════════════════════════════════════════
+     CHAT PANEL
+════════════════════════════════════════════════════════ -->
+<aside class="chat-panel" aria-label="AI assistant chat">
+
   <div class="chat-header">
     <div class="chat-header-tag">AI Assistant</div>
     <div class="chat-header-title">Ask About Emilio</div>
@@ -1022,7 +1407,7 @@ body::before {
 
   <div class="lock-section">
     <div class="lock-instruction" id="lock-instruction">Turn to activate AI</div>
-    <div class="ignition" id="ignition" onclick="toggleLock()" title="Click to toggle ignition">
+    <div class="ignition" id="ignition" onclick="toggleLock()" title="Click to toggle ignition" role="button" tabindex="0" aria-label="Activate AI assistant">
       <div class="lock-housing" id="lock-housing">
         <div class="lock-cylinder" id="lock-cylinder">
           <div class="key-slot">
@@ -1032,15 +1417,15 @@ body::before {
         </div>
       </div>
     </div>
-    <div class="lock-status-row" id="lock-status-row">
+    <div class="lock-status-row" id="lock-status-row" aria-live="polite">
       <span class="status-dot" id="status-dot"></span>
       <span id="status-text">LOCKED</span>
     </div>
   </div>
 
   <div class="chat-body">
-    <div class="chat-messages" id="chat-messages"></div>
-    <div class="locked-overlay" id="locked-overlay">
+    <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-label="Chat messages"></div>
+    <div class="locked-overlay" id="locked-overlay" aria-hidden="true">
       <span class="locked-icon">🔑</span>
       <span class="locked-text">Turn the ignition<br>to activate the AI</span>
     </div>
@@ -1052,51 +1437,97 @@ body::before {
         rows="1"
         disabled
         onkeydown="handleKey(event)"
+        aria-label="Type your question about Emilio"
       ></textarea>
-      <button class="chat-send" id="chat-send" onclick="sendMessage()" disabled>›</button>
+      <button class="chat-send" id="chat-send" onclick="sendMessage()" disabled aria-label="Send message">›</button>
     </div>
   </div>
 </aside>
 
 <script>
 /* ═══════════════════════════════════════════════════════
-   CLOUDFLARE BFF CONFIGURATION
-   No API key stored in the browser. All requests are
-   proxied through the Cloudflare Worker, which holds
-   the GEMMA_API_KEY as a Worker Secret.
+   CONFIGURATION
 ════════════════════════════════════════════════════════ */
 const BFF_URL = "https://steep-lake-4a2c.emilio-cimino95.workers.dev/";
 
-/* Extended profile loaded from the embedded docx (base64).
-   Decoded at runtime and used to enrich the system prompt. */
-const DOCX_B64 = "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";
+/* ──────────────────────────────────────────────────────
+   PROFILE CONTEXT
+   The AI reads its context DIRECTLY from the live HTML
+   sections, so updating the page content automatically
+   updates what the AI knows. No separate data store needed.
 
-let locked  = true;
-let busy    = false;
-let history = [];           // Gemma conversation turns
-let profileText = null;     // decoded extended profile
+   The function below collects structured text from:
+     • The visible CV panel (all sections)
+     • The hidden #ai-profile-data block (extra detail)
+   ────────────────────────────────────────────────────── */
+function buildProfileContext() {
+  const cv = document.getElementById('cv-content');
+  if (!cv) return '';
 
-/* ─── Decode embedded profile ────────────────────────── */
-function decodeProfile() {
-  if (profileText) return profileText;
-  try {
-    // The docx base64 is embedded in the page itself; we extract
-    // the raw bytes and then pull plain text from readable parts.
-    // A full docx parse needs a library; here we do a best-effort
-    // extraction of readable Unicode runs from the XML inside the zip.
-    const binary = atob(DOCX_B64);
-    // Extract printable ASCII / Latin runs (word/document.xml content)
-    const text = binary.replace(/[^\x20-\x7E\n\r\xC0-\xFF]/g, ' ')
-                       .replace(/\s{3,}/g, '\n')
-                       .slice(0, 8000);
-    profileText = text;
-  } catch(e) {
-    profileText = "";
+  // Walk all meaningful text nodes in the CV panel
+  const walker = document.createTreeWalker(
+    cv,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode(node) {
+        const tag = node.parentElement?.tagName?.toLowerCase();
+        // Skip script, style, svg
+        if (['script','style','svg','path'].includes(tag)) return NodeFilter.FILTER_REJECT;
+        const text = node.textContent.trim();
+        if (!text) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  const parts = [];
+  while (walker.nextNode()) {
+    const text = walker.currentNode.textContent.trim();
+    if (text.length > 1) parts.push(text);
   }
-  return profileText;
+
+  return parts.join('\n').replace(/\n{3,}/g, '\n\n').slice(0, 10000);
 }
 
-/* ─── Toggle ignition lock ────────────────────────────── */
+/* ═══════════════════════════════════════════════════════
+   DARK / LIGHT THEME TOGGLE
+════════════════════════════════════════════════════════ */
+function toggleTheme() {
+  const html  = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  document.getElementById('theme-icon').textContent  = isDark ? '🌙' : '☀️';
+  document.getElementById('theme-label').textContent = isDark ? 'Dark'  : 'Light';
+  try { localStorage.setItem('theme', isDark ? 'light' : 'dark'); } catch(_) {}
+}
+
+// Restore saved theme preference
+(function() {
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved && saved !== 'dark') {
+      document.documentElement.setAttribute('data-theme', saved);
+      document.getElementById('theme-icon').textContent  = '🌙';
+      document.getElementById('theme-label').textContent = 'Dark';
+    }
+  } catch(_) {}
+})();
+
+// Keyboard support for ignition
+document.addEventListener('DOMContentLoaded', () => {
+  const ign = document.getElementById('ignition');
+  if (ign) ign.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleLock(); }
+  });
+});
+
+/* ═══════════════════════════════════════════════════════
+   LOCK / UNLOCK
+════════════════════════════════════════════════════════ */
+let locked  = true;
+let busy    = false;
+let history = [];
+
 function toggleLock() {
   locked = !locked;
   const els = {
@@ -1119,7 +1550,8 @@ function toggleLock() {
     els.instruction.textContent = 'AI online — ask anything';
     els.instruction.classList.add('on');
     els.overlay.classList.add('hidden');
-    els.input.disabled  = false;
+    els.overlay.setAttribute('aria-hidden', 'true');
+    els.input.disabled   = false;
     els.sendBtn.disabled = false;
     if (history.length === 0) {
       addMsg('system', "AI activated. I've read Emilio's full profile. Ask me anything about him.");
@@ -1131,30 +1563,33 @@ function toggleLock() {
     els.instruction.textContent = 'Turn to activate AI';
     els.instruction.classList.remove('on');
     els.overlay.classList.remove('hidden');
-    els.input.disabled  = true;
+    els.overlay.removeAttribute('aria-hidden');
+    els.input.disabled   = true;
     els.sendBtn.disabled = true;
   }
 }
 
-/* ─── Click sound ─────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════
+   AUDIO CLICK
+════════════════════════════════════════════════════════ */
 function playClick() {
   try {
     const ctx  = new (window.AudioContext || window.webkitAudioContext)();
     const osc  = ctx.createOscillator();
     const gain = ctx.createGain();
-    osc.connect(gain);
-    gain.connect(ctx.destination);
+    osc.connect(gain); gain.connect(ctx.destination);
     osc.type = 'square';
     osc.frequency.setValueAtTime(600, ctx.currentTime);
     osc.frequency.exponentialRampToValueAtTime(120, ctx.currentTime + 0.12);
     gain.gain.setValueAtTime(0.18, ctx.currentTime);
     gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.14);
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.15);
+    osc.start(ctx.currentTime); osc.stop(ctx.currentTime + 0.15);
   } catch(_) {}
 }
 
-/* ─── Chat helpers ────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════
+   CHAT HELPERS
+════════════════════════════════════════════════════════ */
 function addMsg(type, html) {
   const box = document.getElementById('chat-messages');
   const el  = document.createElement('div');
@@ -1168,19 +1603,21 @@ function addMsg(type, html) {
 function showTyping() {
   const box = document.getElementById('chat-messages');
   const el  = document.createElement('div');
-  el.className = 'typing-bubble';
-  el.id = 'typing-bubble';
+  el.className = 'typing-bubble'; el.id = 'typing-bubble';
   el.innerHTML = '<div class="t-dot"></div><div class="t-dot"></div><div class="t-dot"></div>';
   box.appendChild(el);
   box.scrollTop = box.scrollHeight;
 }
 
 function hideTyping() {
-  const el = document.getElementById('typing-bubble');
-  if (el) el.remove();
+  document.getElementById('typing-bubble')?.remove();
 }
 
-/* ─── Send message via Cloudflare BFF ────────────────── */
+/* ═══════════════════════════════════════════════════════
+   SEND MESSAGE
+   Context is always parsed fresh from the live HTML,
+   so updating page content = updating the AI's knowledge.
+════════════════════════════════════════════════════════ */
 async function sendMessage() {
   if (locked || busy) return;
   const input = document.getElementById('chat-input');
@@ -1195,32 +1632,28 @@ async function sendMessage() {
   document.getElementById('chat-send').disabled = true;
   showTyping();
 
-  /* On the very first message, build a rich system prompt that includes:
-     1) The visible page text (CV content)
-     2) The extended profile decoded from the embedded docx             */
   let userContent = text;
   if (history.length === 0) {
-    const pageCtx    = document.getElementById('cv-content').innerText.slice(0, 4000);
-    const extProfile = decodeProfile().slice(0, 3000);
+    // Build context by parsing the live HTML — no separate data store
+    const ctx = buildProfileContext();
     userContent =
-      "You are an AI assistant embedded in the personal portfolio of Emilio Cimino. " +
-      "Answer questions about Emilio in a professional, accurate, and concise way. " +
-      "Base your answers exclusively on the information below.\n\n" +
-      "=== CV (from the page) ===\n" + pageCtx + "\n\n" +
-      "=== Extended Profile (from docx) ===\n" + extProfile + "\n\n" +
+      "You are an AI assistant embedded in the personal portfolio website of Emilio Cimino. " +
+      "Answer questions about Emilio in a professional, accurate, and friendly way. " +
+      "Base your answers EXCLUSIVELY on the information provided below. " +
+      "Do not invent or extrapolate facts. If something is not covered, say so politely.\n\n" +
+      "=== FULL PROFILE (parsed from portfolio page) ===\n" + ctx + "\n\n" +
       "Now answer this question: " + text;
   }
 
   history.push({ role: "user", parts: [{ text: userContent }] });
 
   try {
-    /* POST to the Cloudflare Worker — no API key in this request */
     const res = await fetch(BFF_URL, {
-      method:  "POST",
+      method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         contents: history,
-        generationConfig: { temperature: 0.65, maxOutputTokens: 512 },
+        generationConfig: { temperature: 0.6, maxOutputTokens: 600 },
       }),
     });
 
@@ -1236,7 +1669,7 @@ async function sendMessage() {
       history.push({ role: "model", parts: [{ text: reply }] });
       addMsg('ai', fmt(reply));
     }
-  } catch (err) {
+  } catch(err) {
     hideTyping();
     addMsg('error', '⚠ Network error — check your connection.');
     history.pop();
@@ -1247,21 +1680,21 @@ async function sendMessage() {
   document.getElementById('chat-input').focus();
 }
 
-/* ─── Keyboard handler ─────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════
+   KEYBOARD & RESIZE
+════════════════════════════════════════════════════════ */
 function handleKey(e) {
-  if (e.key === 'Enter' && !e.shiftKey) {
-    e.preventDefault();
-    sendMessage();
-  }
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
 }
 
-/* ─── Auto-resize textarea ─────────────────────────────── */
-document.getElementById('chat-input').addEventListener('input', function () {
+document.getElementById('chat-input').addEventListener('input', function() {
   this.style.height = 'auto';
   this.style.height = Math.min(this.scrollHeight, 80) + 'px';
 });
 
-/* ─── Helpers ──────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════
+   UTILITIES
+════════════════════════════════════════════════════════ */
 function esc(t) {
   return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
