@@ -1120,8 +1120,36 @@ body::before {
   body.tab-chat .chat-panel {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 64px);
+    /* dvh = dynamic viewport height: shrinks when keyboard opens */
+    height: calc(100dvh - 64px);
     padding-bottom: 0;
+  }
+
+  /* ── Keyboard open: hide tab bar, give chat full visible height ── */
+  body.keyboard-open .mobile-tab-bar {
+    display: none !important;
+  }
+
+  body.keyboard-open.tab-chat .chat-panel {
+    /* JS sets --vvh from visualViewport.height for pixel-perfect fit */
+    height: var(--vvh, 100dvh);
+  }
+
+  /* Prevent input row from ever being squashed */
+  .chat-input-wrap {
+    flex-shrink: 0;
+  }
+
+  /* Larger tap target for send button */
+  .chat-send {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  /* >=16px prevents iOS Safari auto-zoom on focus */
+  .chat-input {
+    font-size: 16px;
   }
 
   /* ── Hero ── */
@@ -1928,4 +1956,59 @@ function switchTab(tab) {
     tabChat.classList.remove('active');
   }
 }
+
+/* ═══════════════════════════════════════════════════════
+   MOBILE KEYBOARD HANDLING
+   Uses visualViewport API to detect keyboard open/close
+   and adjusts --vvh so the chat panel always fits exactly
+   within the visible area (above the keyboard).
+════════════════════════════════════════════════════════ */
+(function initKeyboardHandling() {
+  const chatInput = document.getElementById('chat-input');
+  const body = document.body;
+
+  function setVvh(height) {
+    body.style.setProperty('--vvh', height + 'px');
+  }
+
+  // visualViewport shrinks when keyboard opens — the reliable cross-browser way
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', () => {
+      const vvh = window.visualViewport.height;
+      const threshold = window.screen.height * 0.75;
+      const keyboardOpen = vvh < threshold;
+
+      body.classList.toggle('keyboard-open', keyboardOpen);
+      setVvh(vvh);
+
+      // Scroll messages to bottom so latest message is visible
+      if (keyboardOpen) {
+        setTimeout(() => {
+          const msgs = document.getElementById('chat-messages');
+          if (msgs) msgs.scrollTop = msgs.scrollHeight;
+        }, 100);
+      }
+    });
+  }
+
+  // Fallback: focus/blur on the textarea itself
+  chatInput.addEventListener('focus', () => {
+    body.classList.add('keyboard-open');
+    if (window.visualViewport) setVvh(window.visualViewport.height);
+    setTimeout(() => {
+      const msgs = document.getElementById('chat-messages');
+      if (msgs) msgs.scrollTop = msgs.scrollHeight;
+    }, 350);
+  });
+
+  chatInput.addEventListener('blur', () => {
+    // Small delay avoids flickering when switching between elements
+    setTimeout(() => {
+      if (document.activeElement !== chatInput) {
+        body.classList.remove('keyboard-open');
+        if (window.visualViewport) setVvh(window.visualViewport.height);
+      }
+    }, 150);
+  });
+})();
 </script>
