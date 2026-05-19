@@ -1879,7 +1879,7 @@ async function sendMessage() {
     contents: history,
     generationConfig: { temperature: 0.6, maxOutputTokens: 600 },
   });
-  console.log(request_body);
+  // console.log(request_body);
 
   try {
     const res = await fetch(BFF_URL, {
@@ -1902,6 +1902,7 @@ async function sendMessage() {
       addMsg('ai', fmt(reply));
     }
   } catch(err) {
+    console.log(err)
     hideTyping();
     addMsg('error', '⚠ Network error - check your connection.');
     history.pop();
