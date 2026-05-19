@@ -1897,7 +1897,7 @@ async function sendMessage() {
     } else {
       const data  = await res.json();
       const parts = data?.candidates?.[0]?.content?.parts || []
-      const reply = parts.[parts.length -1]?.text || "-";
+      const reply = parts[parts.length -1]?.text || "-";
       history.push({ role: "model", parts: [{ text: reply }] });
       addMsg('ai', fmt(reply));
     }
