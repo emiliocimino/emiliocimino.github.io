@@ -1875,14 +1875,17 @@ async function sendMessage() {
 
   history.push({ role: "user", parts: [{ text: userContent }] });
 
+  const request_body = JSON.stringify({
+    contents: history,
+    generationConfig: { temperature: 0.6, maxOutputTokens: 600 },
+  }),
+  console.log(request_body)
+
   try {
     const res = await fetch(BFF_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: history,
-        generationConfig: { temperature: 0.6, maxOutputTokens: 600 },
-      }),
+      body: request_body,
     });
 
     hideTyping();
