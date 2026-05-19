@@ -1615,7 +1615,7 @@ body::before {
   <div class="chat-header">
     <div class="chat-header-tag">AI Assistant</div>
     <div class="chat-header-title">Ask About Emilio</div>
-    <div class="chat-header-sub">Powered by Gemma 3 - AI makes Mistakes.</div>
+    <div class="chat-header-sub">Powered by Gemma 4 - AI makes Mistakes.</div>
   </div>
 
   <div class="lock-section">
@@ -1893,7 +1893,8 @@ async function sendMessage() {
       history.pop();
     } else {
       const data  = await res.json();
-      const reply = data?.candidates?.[0]?.content?.parts?.[0]?.text || "-";
+      const parts = data?.candidates?.[0]?.content?.parts? || []
+      const reply = parts.[parts.length -1]?.text || "-";
       history.push({ role: "model", parts: [{ text: reply }] });
       addMsg('ai', fmt(reply));
     }
