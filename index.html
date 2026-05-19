@@ -1878,8 +1878,8 @@ async function sendMessage() {
   const request_body = JSON.stringify({
     contents: history,
     generationConfig: { temperature: 0.6, maxOutputTokens: 600 },
-  }),
-  console.log(request_body)
+  });
+  console.log(request_body);
 
   try {
     const res = await fetch(BFF_URL, {
@@ -1896,7 +1896,7 @@ async function sendMessage() {
       history.pop();
     } else {
       const data  = await res.json();
-      const parts = data?.candidates?.[0]?.content?.parts? || []
+      const parts = data?.candidates?.[0]?.content?.parts || []
       const reply = parts.[parts.length -1]?.text || "-";
       history.push({ role: "model", parts: [{ text: reply }] });
       addMsg('ai', fmt(reply));
