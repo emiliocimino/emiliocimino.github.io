@@ -1877,7 +1877,7 @@ async function sendMessage() {
 
   const request_body = JSON.stringify({
     contents: history,
-    generationConfig: { temperature: 0.6, maxOutputTokens: 600 },
+    generationConfig: { temperature: 0.65, maxOutputTokens: 4096 },
   });
   // console.log(request_body);
 
